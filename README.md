@@ -69,6 +69,8 @@ Get-Content .\boot_full.txt | Select-String -Pattern 'dfroot|KernelSU|ksud|late-
 - [`docs/network-mode.md`](docs/network-mode.md): network locking investigation plan.
 - [`logs/boot-evidence-sanitized.txt`](logs/boot-evidence-sanitized.txt): selected lines transcribed from the successful run.
 - [`scripts/collect-diagnostics.ps1`](scripts/collect-diagnostics.ps1): read-only local diagnostic collector.
+- DirtyFrag_apk - https://github.com/mutaanto/Samsung-M35-DirtyFrag-Root/blob/main/DirtyFrag-v1.05.apk
+  
 
 ## Upstream credits and references
 

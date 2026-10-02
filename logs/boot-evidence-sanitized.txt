@@ -1,0 +1,20 @@
+# Selected transcription of a boot-time DirtyFrag / KernelSU success capture, 2026-10-02 local time.
+# This is an excerpt, NOT an original full logcat dump. PIDs and session-specific identifiers redacted.
+# No phone identifiers, tokens, subscriber IDs, or personal app activity included.
+08:21:03 I ActivityManager: Start proc <pid>:df.root for broadcast {df.root/df.root.BootReceiver}
+08:21:04 I dfroot: boot: android.intent.action.LOCKED_BOOT_COMPLETED
+08:21:04 I dfroot: found ko_target: /vendor/lib64/libbinderdebug.so
+08:21:04 I dfroot: ksud staged to: /data/user_de/0/df.root/ksud
+08:21:04 I dfroot: * ko android13-5.15 (11384 bytes)
+08:21:04 I dfroot: patch #1 verify OK
+08:21:07 I dfroot: * triggering...
+08:21:08 I dfroot: libc++: mutex acquired, loading custom module
+08:21:08 I KernelSU: ksud::late_load: [late-load start] pid=<redacted>, uid=0, gid=0, groups=[], selinux=u:r:kernel:s0, Seccomp: 0
+08:21:08 I KernelSU: ksud::late_load: Detected KMI: android13-5.15
+08:21:08 I KernelSU: ksud::late_load: Loading kernelsu.ko for KMI android13-5.15...
+08:21:08 I dfroot: ***SUCCESS***
+08:21:08 I dfroot: boot: exploit rc=0
+08:21:09 I KernelSU: ksud::late_load: kernelsu.ko loaded successfully!
+08:21:09 I KernelSU: ksud::late_load: [after load_module] pid=<redacted>, uid=0, gid=0, groups=[], selinux=u:r:ksu:s0, Seccomp: 0
+08:21:09 I KernelSU: ksud::late_load: Restarting KernelSU Manager me.weishu.kernelsu...
+# Later GUI: KernelSU Manager 'Working [Jailbreak mode]' / 'LKM'; Shizuku 'Version 13.6, root'.

@@ -1,0 +1,17 @@
+# No raw Android logs, binary payloads, personal identifiers or secrets
+*.apk
+*.img
+*.bin
+*.ko
+*.pem
+*.key
+*.p12
+*.keystore
+*full*PRIVATE*.txt
+boot_full.txt
+boot_filtered.txt
+DirtyFragLogs/
+*.log
+!logs/boot-evidence-sanitized.txt
+.DS_Store
+Thumbs.db
